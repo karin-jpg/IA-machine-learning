@@ -7,10 +7,6 @@ class KNN:
     flowersCases = []
     flowersTests = []
     classes = []
-
-    def test(self):
-        lista = ['salve', 'dale', 'dole']
-        print(lista.index('dale'))
     
     def read(self, file, data):
         with open(file) as ficheiro:
@@ -70,8 +66,9 @@ class KNN:
             else:
                 print("Erro da classe!")
                 miss += 1
-        print("A porcentagem de acerto foi de ",  round(hits/(hits+miss),2) * 100)
-
+        print("A porcentagem de acerto foi de ",  round(hits/(hits+miss),2) * 100,"\n")
+        print("Pressione enter para voltar ao menu")
+        input()
             
 
                 
